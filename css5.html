@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions</title>
+    <style>
+        .container {
+            position: relative;
+            
+        }
+        .top-left {
+            top: 8px;
+            left: 16px;
+            position: absolute;
+        }
+        img {
+            width: 1000px;
+            height: 500px;
+        
+            opacity: 0.3;
+        }
+        .top-left img {
+            opacity: 0.6;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Image Text</h2>
+    <div class="container">
+        <img src="Image/OIP.jpg" alt="cinque terre">
+        <div class="top-left">
+            <img src="Image/tl.jpg" >
+        </div>
+    </div>
+</body>
+</html>

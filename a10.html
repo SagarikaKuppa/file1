@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <script>
+            function f1() {
+                var canvas1=document.getElementById("canvas1");
+                var context=canvas1.getContext('2d');
+                context.fillStyle='RED';
+                context.fillRect(25,10,150,80);
+            }
+        </script>
+    </head>
+    <body>
+        <h1>HTML5 Canvas</h1>
+        <button onclick="f1()">Click Me</button>
+        <canvas id="canvas1" style="border: 2px solid green;"></canvas>
+    </body>
+</html>

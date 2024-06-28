@@ -1,0 +1,21 @@
+<script>
+    function f1() {
+        var screenSize=document.documentElement.clientWidth;
+        var span1=document.getElementById("span1");
+        span1.innerHTML="Current sceen is:"+screenSize+"pixels<br/>";
+        if(screenSize>=1200) 
+            span1.innerHTML+"current screen type is : Large Screen Display";
+        else if(screenSize>=992) 
+            span1.innerHTML+"current screen type is : Medium Screen Display";
+        else if(screenSize>=786) 
+            span1.innerHTML+"current screen type is : Small Screen Display";
+        else 
+            span1.innerHTML+"current screen type is : Extra Small Screen Display";
+
+    }
+</script>
+
+<body onresize="f1()">
+    <h1>Responsive Web Design</h1>
+    <span id="span1"></span>
+</body>

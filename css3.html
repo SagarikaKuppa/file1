@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NavBar</title>
+    <style>
+       ul.horz {
+        margin: 0;
+        padding: 0;
+        list-style-type: disc;
+        overflow: hidden;
+        background-color: #333;
+        
+       }
+       li{
+        float: left;
+        border-right:1px solid black ;
+       }
+       li a{
+        padding: 14px 16px;
+        display: block;
+        color:white;
+        text-decoration: none;
+        text-align: center;
+       }
+       li a:hover {
+        background-color: #111;
+       }
+    </style>
+</head>
+<body>
+    <h1>This is an example of horizontal navigation bars</h1> <br/>
+    <ul class="horz">
+        <li><a href="default.asp">Home</a></li>
+        <li><a href="news.asp">News</a></li>
+        <li><a href="contact.asp">Contact</a></li>
+        <li style="float: right;"><a href="about.asp">About</a></li>
+    </ul>
+</body>
+</html>
